@@ -4,7 +4,12 @@
     {
         public static void Main()
         {
-            Console.WriteLine("who quests for the twilight dragon");
+            StringValidation sv = new StringValidation();
+
+            Console.WriteLine(sv.AlmostPalindrome("abcdcbg"));
+            Console.WriteLine(sv.AlmostPalindrome("abcdaaa"));
+            Console.WriteLine(sv.AlmostPalindrome("abcdcba"));
+            Console.WriteLine(sv.AlmostPalindrome("abcdcbg "));
         }
     }
 }
